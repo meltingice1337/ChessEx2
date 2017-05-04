@@ -1,0 +1,330 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F8217751EB9D14E00B41FE5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F8217741EB9D14E00B41FE5 /* main.cpp */; };
+		3F82177D1EB9D18600B41FE5 /* libSDL2-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F82177C1EB9D18600B41FE5 /* libSDL2-2.0.0.dylib */; };
+		3F82177F1EB9D21100B41FE5 /* libSDL2_image-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F82177E1EB9D21100B41FE5 /* libSDL2_image-2.0.0.dylib */; };
+		3F8217821EB9D59C00B41FE5 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F8217811EB9D59C00B41FE5 /* Game.cpp */; };
+		3F8217881EB9DA6900B41FE5 /* ChessEx2Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F8217871EB9DA6900B41FE5 /* ChessEx2Game.cpp */; };
+		3F82178C1EB9DC3C00B41FE5 /* World.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F82178B1EB9DC3C00B41FE5 /* World.cpp */; };
+		3F82178E1EB9DCE600B41FE5 /* TileManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F82178D1EB9DCE600B41FE5 /* TileManager.cpp */; };
+		3F8217961EB9E4E400B41FE5 /* Graphics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F8217951EB9E4E400B41FE5 /* Graphics.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3F82176F1EB9D14E00B41FE5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3F8217711EB9D14E00B41FE5 /* ChessEx2 */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "compiled.mach-o.executable"; path = ChessEx2; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F8217741EB9D14E00B41FE5 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		3F82177C1EB9D18600B41FE5 /* libSDL2-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2-2.0.0.dylib"; path = "../../../../usr/local/Cellar/sdl2/2.0.5/lib/libSDL2-2.0.0.dylib"; sourceTree = "<group>"; };
+		3F82177E1EB9D21100B41FE5 /* libSDL2_image-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2_image-2.0.0.dylib"; path = "../../../../usr/local/Cellar/sdl2_image/2.0.1_2/lib/libSDL2_image-2.0.0.dylib"; sourceTree = "<group>"; };
+		3F8217801EB9D52A00B41FE5 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		3F8217811EB9D59C00B41FE5 /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		3F8217871EB9DA6900B41FE5 /* ChessEx2Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ChessEx2Game.cpp; sourceTree = "<group>"; };
+		3F8217891EB9DA7E00B41FE5 /* ChessEx2Game.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChessEx2Game.h; sourceTree = "<group>"; };
+		3F82178A1EB9DBE200B41FE5 /* World.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = World.h; sourceTree = "<group>"; };
+		3F82178B1EB9DC3C00B41FE5 /* World.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = World.cpp; sourceTree = "<group>"; };
+		3F82178D1EB9DCE600B41FE5 /* TileManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TileManager.cpp; path = managers/TileManager.cpp; sourceTree = "<group>"; };
+		3F82178F1EB9DD1600B41FE5 /* TileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TileManager.h; path = managers/TileManager.h; sourceTree = "<group>"; };
+		3F8217951EB9E4E400B41FE5 /* Graphics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Graphics.cpp; sourceTree = "<group>"; };
+		3F8217971EB9E4F100B41FE5 /* Graphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Graphics.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F82176E1EB9D14E00B41FE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F82177F1EB9D21100B41FE5 /* libSDL2_image-2.0.0.dylib in Frameworks */,
+				3F82177D1EB9D18600B41FE5 /* libSDL2-2.0.0.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F8217681EB9D14E00B41FE5 = {
+			isa = PBXGroup;
+			children = (
+				3F8217731EB9D14E00B41FE5 /* ChessEx2 */,
+				3F8217721EB9D14E00B41FE5 /* Products */,
+				3F82177B1EB9D18600B41FE5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3F8217721EB9D14E00B41FE5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F8217711EB9D14E00B41FE5 /* ChessEx2 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F8217731EB9D14E00B41FE5 /* ChessEx2 */ = {
+			isa = PBXGroup;
+			children = (
+				3F8217911EB9DD2200B41FE5 /* managers */,
+				3F8217861EB9DA3E00B41FE5 /* utility */,
+				3F8217871EB9DA6900B41FE5 /* ChessEx2Game.cpp */,
+				3F8217891EB9DA7E00B41FE5 /* ChessEx2Game.h */,
+				3F82178A1EB9DBE200B41FE5 /* World.h */,
+				3F82178B1EB9DC3C00B41FE5 /* World.cpp */,
+				3F8217741EB9D14E00B41FE5 /* main.cpp */,
+			);
+			path = ChessEx2;
+			sourceTree = "<group>";
+		};
+		3F82177B1EB9D18600B41FE5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F82177E1EB9D21100B41FE5 /* libSDL2_image-2.0.0.dylib */,
+				3F82177C1EB9D18600B41FE5 /* libSDL2-2.0.0.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F8217861EB9DA3E00B41FE5 /* utility */ = {
+			isa = PBXGroup;
+			children = (
+				3F8217951EB9E4E400B41FE5 /* Graphics.cpp */,
+				3F8217971EB9E4F100B41FE5 /* Graphics.h */,
+				3F8217801EB9D52A00B41FE5 /* Game.h */,
+				3F8217811EB9D59C00B41FE5 /* Game.cpp */,
+			);
+			path = utility;
+			sourceTree = "<group>";
+		};
+		3F8217911EB9DD2200B41FE5 /* managers */ = {
+			isa = PBXGroup;
+			children = (
+				3F82178D1EB9DCE600B41FE5 /* TileManager.cpp */,
+				3F82178F1EB9DD1600B41FE5 /* TileManager.h */,
+			);
+			name = managers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F8217701EB9D14E00B41FE5 /* ChessEx2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F8217781EB9D14E00B41FE5 /* Build configuration list for PBXNativeTarget "ChessEx2" */;
+			buildPhases = (
+				3F82176D1EB9D14E00B41FE5 /* Sources */,
+				3F82176E1EB9D14E00B41FE5 /* Frameworks */,
+				3F82176F1EB9D14E00B41FE5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChessEx2;
+			productName = ChessEx2;
+			productReference = 3F8217711EB9D14E00B41FE5 /* ChessEx2 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F8217691EB9D14E00B41FE5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Darius Costolas";
+				TargetAttributes = {
+					3F8217701EB9D14E00B41FE5 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3F82176C1EB9D14E00B41FE5 /* Build configuration list for PBXProject "ChessEx2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3F8217681EB9D14E00B41FE5;
+			productRefGroup = 3F8217721EB9D14E00B41FE5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F8217701EB9D14E00B41FE5 /* ChessEx2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F82176D1EB9D14E00B41FE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F8217751EB9D14E00B41FE5 /* main.cpp in Sources */,
+				3F8217821EB9D59C00B41FE5 /* Game.cpp in Sources */,
+				3F82178C1EB9DC3C00B41FE5 /* World.cpp in Sources */,
+				3F8217881EB9DA6900B41FE5 /* ChessEx2Game.cpp in Sources */,
+				3F8217961EB9E4E400B41FE5 /* Graphics.cpp in Sources */,
+				3F82178E1EB9DCE600B41FE5 /* TileManager.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3F8217761EB9D14E00B41FE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		3F8217771EB9D14E00B41FE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3F8217791EB9D14E00B41FE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/sdl2/2.0.5/lib,
+					/usr/local/Cellar/sdl2_image/2.0.1_2/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3F82177A1EB9D14E00B41FE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/sdl2/2.0.5/lib,
+					/usr/local/Cellar/sdl2_image/2.0.1_2/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F82176C1EB9D14E00B41FE5 /* Build configuration list for PBXProject "ChessEx2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F8217761EB9D14E00B41FE5 /* Debug */,
+				3F8217771EB9D14E00B41FE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F8217781EB9D14E00B41FE5 /* Build configuration list for PBXNativeTarget "ChessEx2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F8217791EB9D14E00B41FE5 /* Debug */,
+				3F82177A1EB9D14E00B41FE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F8217691EB9D14E00B41FE5 /* Project object */;
+}
