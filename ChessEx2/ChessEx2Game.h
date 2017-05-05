@@ -24,6 +24,6 @@ public:
     virtual void OnKeyDown(SDL_KeyboardEvent& event);
     virtual void OnKeyUp(SDL_KeyboardEvent& event);
     virtual void OnUpdate();
-    virtual void OnRender(Graphics *graphics);
+    virtual void OnRender(std::shared_ptr<Graphics> graphics);
 };
 #endif /* ChessEx2Game_h */

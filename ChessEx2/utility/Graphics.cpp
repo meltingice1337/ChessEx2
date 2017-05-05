@@ -8,18 +8,19 @@
 
 #include "Graphics.h"
 
-Graphics::Graphics(SDL_Window *window)
+Graphics::Graphics(SDL_Window& window)
+:window(window)
 {
-    this->window = window;
-    this->renderer = SDL_CreateRenderer(window, -1, 0);
+    this->renderer = std::unique_ptr<SDL_Renderer, SDL_Deleter>(SDL_CreateRenderer(&window, -1, 0), SDL_Deleter());
 }
 
-SDL_Texture *Graphics::GetTextureFromSurface(SDL_Surface *surface)
+SDL_Texture *Graphics::GetTextureFromSurface(SDL_Surface& surface)
 {
-    return SDL_CreateTextureFromSurface(renderer, surface);
+    return SDL_CreateTextureFromSurface(renderer.get(), &surface);
 }
 
-void Graphics::Draw(SDL_Texture *texture, int x, int y, int w, int h)
+
+void Graphics::Draw(SDL_Texture &texture, int x, int y, int w, int h)
 {
     SDL_Rect textureRectangle;
     textureRectangle.x = x;
@@ -27,6 +28,22 @@ void Graphics::Draw(SDL_Texture *texture, int x, int y, int w, int h)
     textureRectangle.w = w;
     textureRectangle.h = h;
     
-    SDL_RenderCopy(renderer, texture, &textureRectangle, &textureRectangle);
-    SDL_RenderPresent(renderer);
+    SDL_RenderCopy(renderer.get(), &texture, NULL, &textureRectangle);
+    SDL_RenderPresent(renderer.get());
+}
+
+void Graphics::Draw(SDL_Texture &texture, int x, int y, int w, int h, SDL_Rect& clip)
+{
+    SDL_Rect textureRectangle;
+    textureRectangle.x = x;
+    textureRectangle.y = y;
+    textureRectangle.w = w;
+    textureRectangle.h = h;
+    
+    SDL_RenderCopy(renderer.get(), &texture, &clip, &textureRectangle);
+}
+
+void Graphics::ClearScreen()
+{
+    SDL_RenderPresent(renderer.get());
 }

@@ -17,7 +17,7 @@ m_width(width),
 m_height(height),
 m_framesPerSecond(framesPerSecond),
 m_timePerFrame(1000 / framesPerSecond), // milliseconds
-m_window(NULL)
+m_window(nullptr)
 {
     
 }
@@ -41,8 +41,8 @@ bool Game::Init()
     //
     // GL CONTEXT ATTRIBUTES
     //
-    // SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
-    // SDL_GL_SetAttribute(SDL_GL_DEPTH_SIZE, 24);
+     SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
+     SDL_GL_SetAttribute(SDL_GL_DEPTH_SIZE, 24);
     
     //
     // CREATING WINDOW
@@ -61,8 +61,7 @@ bool Game::Init()
         std::cerr << "ERROR: Creating the SDL Window." << '\n';
         return false;
     }
-    
-    this->graphics = new Graphics(m_window);
+    this->graphics = std::shared_ptr<Graphics>(new Graphics(*m_window));
     
     //
     // CREATING GL CONTEXT
@@ -105,17 +104,17 @@ bool Game::Run()
     
     while(m_state == GS_RUNNING)
     {
-       // Uint32 start = SDL_GetTicks();
+        Uint32 start = SDL_GetTicks();
         
         HandleEvent(event);
         Update();
         Render();
         
-        /*Uint32 elapsedTime = SDL_GetTicks() - start;
+        Uint32 elapsedTime = SDL_GetTicks() - start;
         if(m_timePerFrame > elapsedTime)
         {
             SDL_Delay(m_timePerFrame - elapsedTime);
-        }*/
+        }
     }
     
     Cleanup();
@@ -200,7 +199,7 @@ void Game::OnUpdate()
     // override
 }
 
-void Game::OnRender(Graphics* graphics)
+void Game::OnRender(std::shared_ptr<Graphics> graphics)
 {
     // override
 }

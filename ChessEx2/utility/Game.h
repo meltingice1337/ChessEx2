@@ -10,6 +10,7 @@
 #define Game_h
 
 #include <SDL2/SDL.h>
+#include <memory>
 #include "Graphics.h"
 
 enum GameState
@@ -26,7 +27,7 @@ public:
          uint32_t framesPerSecond = 60);
     virtual ~Game();
     
-    Graphics *graphics;
+    std::shared_ptr<Graphics> graphics;
     
     bool Run();
     void Exit();
@@ -41,7 +42,7 @@ public:
     virtual void OnResize(uint32_t width, uint32_t height);
     virtual void OnExit();
     virtual void OnUpdate();
-    virtual void OnRender(Graphics *graphics);
+    virtual void OnRender(std::shared_ptr<Graphics> graphics);
     
 private:
     Game(const Game& rhs);

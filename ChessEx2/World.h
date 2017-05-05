@@ -10,8 +10,9 @@
 #define World_h
 
 #include <memory>
+#include <iostream>
 #include "utility/Graphics.h"
-
+#include "utility/Sprite.h"
 #include "World.h"
 
 class World
@@ -25,7 +26,7 @@ public:
     void OnMouseMove(int x, int y);
     void OnMouseClick(int button, int state, int x, int y);
     void OnUpdate();
-    void OnRender(Graphics *graphics);
+    void OnRender(std::shared_ptr<Graphics> graphics);
     
     float GetWidth() const;
     float GetHeight() const;

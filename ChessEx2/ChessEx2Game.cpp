@@ -36,7 +36,7 @@ void ChessEx2Game::OnUpdate()
     World::GetInstance().OnUpdate();
 }
 
-void ChessEx2Game::OnRender(Graphics *graphics)
+void ChessEx2Game::OnRender(std::shared_ptr<Graphics> graphics)
 {
     World::GetInstance().OnRender(graphics);
 }
