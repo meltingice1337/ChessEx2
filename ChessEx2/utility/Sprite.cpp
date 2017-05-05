@@ -32,7 +32,7 @@ void Sprite::Render(std::shared_ptr<Graphics> graphics, int x, int y)
     if(!texture)
         texture = std::unique_ptr<SDL_Texture, SDL_Deleter>(graphics->GetTextureFromSurface(*surface), SDL_Deleter());
     if(clip)
-        graphics->Draw(*texture,x,y,width,height, *clip);
+        graphics->Draw(*texture,x,y, width, height, *clip);
     else
         graphics->Draw(*texture, x, y, width, height);
 }
@@ -46,6 +46,12 @@ void Sprite::SetClip(int x, int y, int width, int height)
     clip->w = width;
     clip->h = height;
     
+    this->width = width;
+    this->height = height;
+}
+
+void Sprite::SetWidth(int width, int height)
+{
     this->width = width;
     this->height = height;
 }

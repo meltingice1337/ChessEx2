@@ -22,6 +22,7 @@ public:
     void LoadFromFile(std::string fileName);
     void Render(std::shared_ptr<Graphics> graphics, int x, int y);
     void SetClip(int x, int y, int width, int height);
+    void SetWidth(int width, int height);
 private:
     std::unique_ptr<SDL_Surface, SDL_Deleter> surface;
     std::unique_ptr<SDL_Texture, SDL_Deleter> texture;

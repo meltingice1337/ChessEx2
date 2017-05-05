@@ -16,22 +16,26 @@ World::~World()
 #endif
 
 }
-std::vector<std::shared_ptr <Sprite> > sprites;
-int pos[10][2];
+std::shared_ptr <Sprite> sprite1;
+std::shared_ptr <Sprite> sprite2;
+int pos[64][2];
 void World::Initialize(uint32_t width, uint32_t height)
 {
-    for(int i=0;i<10;i++)
+    sprite1 = std::make_shared<Sprite>("/Users/dariuscostolas/workspace/ChessEx2/ChessEx2/assets/tileset.png");
+    sprite1->SetClip(0, 0, 100, 75);
+    sprite2 = std::make_shared<Sprite>("/Users/dariuscostolas/workspace/ChessEx2/ChessEx2/assets/tileset.png");
+    sprite2->SetClip(128, 0, 100, 75);
+
+    for(int i=0;i<64;i++)
     {
-        std::shared_ptr<Sprite> sprite(new Sprite("/Users/dariuscostolas/workspace/ChessEx2/ChessEx2/assets/tileset.png"));
-        sprite->SetClip(0, 0, 128, 128);
-        sprites.push_back(sprite);
         if(i > 0)
         {
-            pos[i][0] = pos[i-1][0] + 122;
-            if(pos[i][0] > 800)
+            pos[i][0] = pos[i-1][0] + 100;
+            pos[i][1] = pos[i-1][1];
+            if(pos[i][0] >= 800)
             {
                 pos[i][0] = 0;
-                pos[i][1]+= 128;
+                pos[i][1]+= 75;
             }
         }
         else
@@ -58,10 +62,15 @@ void World::OnUpdate()
 
 void World::OnRender(std::shared_ptr<Graphics> graphics)
 {
-    for(int i=0;i<10;i++)
+    int current = 0;
+    for(int i=0;i<64;i++)
     {
-        sprites[i]->Render(graphics, pos[i][0], pos[i][1]);
-        
+        if(i % 2 == current)
+            sprite1->Render(graphics, pos[i][0], pos[i][1]);
+        else
+            sprite2->Render(graphics, pos[i][0], pos[i][1]);
+
+        current = (i+1) % 8 == 0 ? current ^ 1 : current;
     }
     graphics->ClearScreen();
 }
