@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F0F7DF81EC08F2000ADEC7D /* SpriteManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F0F7DF71EC08F2000ADEC7D /* SpriteManager.cpp */; };
+		3F0F7DFD1EC0971500ADEC7D /* Actor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F0F7DFC1EC0971500ADEC7D /* Actor.cpp */; };
 		3F8217751EB9D14E00B41FE5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F8217741EB9D14E00B41FE5 /* main.cpp */; };
 		3F82177D1EB9D18600B41FE5 /* libSDL2-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F82177C1EB9D18600B41FE5 /* libSDL2-2.0.0.dylib */; };
 		3F82177F1EB9D21100B41FE5 /* libSDL2_image-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F82177E1EB9D21100B41FE5 /* libSDL2_image-2.0.0.dylib */; };
@@ -16,6 +18,8 @@
 		3F82178E1EB9DCE600B41FE5 /* TileManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F82178D1EB9DCE600B41FE5 /* TileManager.cpp */; };
 		3F8217961EB9E4E400B41FE5 /* Graphics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F8217951EB9E4E400B41FE5 /* Graphics.cpp */; };
 		3FB738161EBB45B40069E4A9 /* Sprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FB738151EBB45B40069E4A9 /* Sprite.cpp */; };
+		3FC41D301EC0AA94005C4CF0 /* BoardTile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FC41D2F1EC0AA94005C4CF0 /* BoardTile.cpp */; };
+		3FC41D321EC0AC95005C4CF0 /* Board.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FC41D311EC0AC95005C4CF0 /* Board.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +35,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3F0F7DF61EC08E4500ADEC7D /* SpriteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpriteManager.h; sourceTree = "<group>"; };
+		3F0F7DF71EC08F2000ADEC7D /* SpriteManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpriteManager.cpp; sourceTree = "<group>"; };
+		3F0F7DF91EC094E800ADEC7D /* Actor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Actor.h; sourceTree = "<group>"; };
+		3F0F7DFC1EC0971500ADEC7D /* Actor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Actor.cpp; sourceTree = "<group>"; };
 		3F8217711EB9D14E00B41FE5 /* ChessEx2 */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "compiled.mach-o.executable"; path = ChessEx2; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F8217741EB9D14E00B41FE5 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		3F82177C1EB9D18600B41FE5 /* libSDL2-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2-2.0.0.dylib"; path = "../../../../usr/local/Cellar/sdl2/2.0.5/lib/libSDL2-2.0.0.dylib"; sourceTree = "<group>"; };
@@ -47,6 +55,10 @@
 		3F8217971EB9E4F100B41FE5 /* Graphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Graphics.h; sourceTree = "<group>"; };
 		3FB738141EBB44D30069E4A9 /* Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sprite.h; sourceTree = "<group>"; };
 		3FB738151EBB45B40069E4A9 /* Sprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sprite.cpp; sourceTree = "<group>"; };
+		3FC41D2A1EC0A960005C4CF0 /* Board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Board.h; sourceTree = "<group>"; };
+		3FC41D2F1EC0AA94005C4CF0 /* BoardTile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BoardTile.cpp; sourceTree = "<group>"; };
+		3FC41D311EC0AC95005C4CF0 /* Board.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Board.cpp; sourceTree = "<group>"; };
+		3FC41D331EC0BC9F005C4CF0 /* BoardTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoardTile.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,8 +96,14 @@
 			children = (
 				3F8217911EB9DD2200B41FE5 /* managers */,
 				3F8217861EB9DA3E00B41FE5 /* utility */,
-				3F8217871EB9DA6900B41FE5 /* ChessEx2Game.cpp */,
 				3F8217891EB9DA7E00B41FE5 /* ChessEx2Game.h */,
+				3F8217871EB9DA6900B41FE5 /* ChessEx2Game.cpp */,
+				3F0F7DF91EC094E800ADEC7D /* Actor.h */,
+				3F0F7DFC1EC0971500ADEC7D /* Actor.cpp */,
+				3FC41D2F1EC0AA94005C4CF0 /* BoardTile.cpp */,
+				3FC41D331EC0BC9F005C4CF0 /* BoardTile.h */,
+				3FC41D2A1EC0A960005C4CF0 /* Board.h */,
+				3FC41D311EC0AC95005C4CF0 /* Board.cpp */,
 				3F82178A1EB9DBE200B41FE5 /* World.h */,
 				3F82178B1EB9DC3C00B41FE5 /* World.cpp */,
 				3F8217741EB9D14E00B41FE5 /* main.cpp */,
@@ -111,6 +129,8 @@
 				3F8217971EB9E4F100B41FE5 /* Graphics.h */,
 				3F8217801EB9D52A00B41FE5 /* Game.h */,
 				3F8217811EB9D59C00B41FE5 /* Game.cpp */,
+				3F0F7DF61EC08E4500ADEC7D /* SpriteManager.h */,
+				3F0F7DF71EC08F2000ADEC7D /* SpriteManager.cpp */,
 			);
 			path = utility;
 			sourceTree = "<group>";
@@ -181,10 +201,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FC41D301EC0AA94005C4CF0 /* BoardTile.cpp in Sources */,
+				3F0F7DFD1EC0971500ADEC7D /* Actor.cpp in Sources */,
 				3F8217751EB9D14E00B41FE5 /* main.cpp in Sources */,
 				3F8217821EB9D59C00B41FE5 /* Game.cpp in Sources */,
 				3F82178C1EB9DC3C00B41FE5 /* World.cpp in Sources */,
 				3F8217881EB9DA6900B41FE5 /* ChessEx2Game.cpp in Sources */,
+				3F0F7DF81EC08F2000ADEC7D /* SpriteManager.cpp in Sources */,
+				3FC41D321EC0AC95005C4CF0 /* Board.cpp in Sources */,
 				3F8217961EB9E4E400B41FE5 /* Graphics.cpp in Sources */,
 				3FB738161EBB45B40069E4A9 /* Sprite.cpp in Sources */,
 				3F82178E1EB9DCE600B41FE5 /* TileManager.cpp in Sources */,

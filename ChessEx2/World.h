@@ -12,8 +12,8 @@
 #include <memory>
 #include <iostream>
 #include "utility/Graphics.h"
-#include "utility/Sprite.h"
-#include "World.h"
+#include "utility/SpriteManager.h"
+#include "Board.h"
 
 class World
 {

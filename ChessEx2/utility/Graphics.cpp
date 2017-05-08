@@ -11,7 +11,7 @@
 Graphics::Graphics(SDL_Window& window)
 :window(window)
 {
-    this->renderer = std::unique_ptr<SDL_Renderer, SDL_Deleter>(SDL_CreateRenderer(&window, -1, 0), SDL_Deleter());
+    this->renderer = RendererPtr(SDL_CreateRenderer(&window, -1, 0));
 }
 
 SDL_Texture *Graphics::GetTextureFromSurface(SDL_Surface& surface)

@@ -13,16 +13,12 @@ Sprite::Sprite(std::string fileName)
     LoadFromFile(fileName);
 }
 
-Sprite::~Sprite()
-{
-    SDL_FreeSurface(surface.get());
-    SDL_DestroyTexture(texture.get());
-}
 
 void Sprite::LoadFromFile(std::string fileName)
 {
     if(!surface)
-        surface = std::unique_ptr<SDL_Surface, SDL_Deleter>(IMG_Load(fileName.c_str()), SDL_Deleter());
+        surface = SurfacePtr(IMG_Load(fileName.c_str()));
+    
     width = surface->w;
     height = surface->h;
 }
@@ -30,7 +26,8 @@ void Sprite::LoadFromFile(std::string fileName)
 void Sprite::Render(std::shared_ptr<Graphics> graphics, int x, int y)
 {
     if(!texture)
-        texture = std::unique_ptr<SDL_Texture, SDL_Deleter>(graphics->GetTextureFromSurface(*surface), SDL_Deleter());
+        texture = TexturePtr(graphics->GetTextureFromSurface(*surface));
+    
     if(clip)
         graphics->Draw(*texture,x,y, width, height, *clip);
     else
@@ -48,6 +45,8 @@ void Sprite::SetClip(int x, int y, int width, int height)
     
     this->width = width;
     this->height = height;
+    
+    std::cout << "Sprite <" << width << ", " << height << ">" << std::endl;
 }
 
 void Sprite::SetWidth(int width, int height)
